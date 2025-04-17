@@ -1,0 +1,105 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    scroll-behavior: smooth; /* Enables smooth scrolling natively */
+}
+
+/* Header */
+header {
+    background-color: #006d77; /* Peacock Green */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+header img {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Navigation */
+nav {
+    background-color: #003049; /* Space Night Blue */
+    overflow: hidden;
+    text-align: center;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: inline-block;
+    transition: color 0.3s, background-color 0.3s;
+}
+nav a:hover, nav a.active {
+    background-color: #f77f00; /* Accent Orange */
+    color: black;
+}
+
+/* Sections */
+section {
+    padding: 20px;
+    text-align: center;
+}
+.container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    color: black; /* Ensures text is visible in the container */
+}
+#home {
+    background-color: #003049; /* Space Night Blue */
+    color: white; /* Visible text on dark background */
+    animation: fade-in 1s ease-out; /* Animation effect */
+}
+#events {
+    background-color: #6A0572; /* Purple */
+    color: white; /* Visible text on dark background */
+    animation: fade-in 1s ease-out;
+}
+#resources {
+    background-color: #006d77; /* Peacock Green */
+    color: white; /* Visible text on dark background */
+    animation: fade-in 1s ease-out;
+}
+#members {
+    background-color: #1E212B; /* Navy Blue */
+    color: white; /* Visible text on dark background */
+    animation: fade-in 1s ease-out;
+}
+section h2 {
+    border-bottom: 2px solid white; /* Visible underline */
+    padding-bottom: 10px;
+}
+
+/* Animations */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #006d77; /* Peacock Green */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+footer img {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 0 auto;
+}
